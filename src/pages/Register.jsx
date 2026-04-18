@@ -8,7 +8,7 @@ function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await API.post('/auth/register', form);
+    const res = await API.post('/api/auth/register', form);
 
     localStorage.setItem('token', res.data.token);
     navigate('/dashboard');
