@@ -26,6 +26,10 @@ function Login() {
           onChange={(e) => setForm({...form, password: e.target.value})} />
 
         <button className="w-full bg-green-500 text-white p-2 rounded">Login</button>
+        <p>
+  Don't have an account? 
+  <a href="/register">Register</a>
+</p>
       </form>
     </div>
   );
