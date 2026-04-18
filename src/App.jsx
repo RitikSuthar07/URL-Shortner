@@ -11,7 +11,15 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/analytics/:id" element={<Analytics />} />
+        {/* <Route path="/analytics/:id" element={<Analytics />} /> */}
+        <Route
+  path="/analytics/:id"
+  element={
+    <PrivateRoute>
+      <Analytics />
+    </PrivateRoute>
+  }
+/>
         <Route
           path="/dashboard"
           element={
