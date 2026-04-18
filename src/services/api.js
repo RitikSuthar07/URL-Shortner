@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://url-shortner-backend-y0u9.onrender.com/',
+  baseURL: 'https://url-shortner-backend-y0u9.onrender.com/api/',
 });
 
 // attach token automatically
